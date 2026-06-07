@@ -172,3 +172,4 @@ VRAM optimisations:
 **Avantika Gurav**
 third year B.Tech (Information Technology) — Cummins College of Engineering for Women, Pune
 [LinkedIn](https://linkedin.com/in/avantika-gurav) · [GitHub](https://github.com/Avantika580)
+[Medium Blog Post](https://medium.com/@avantika9542/building-neural-style-transfer-from-scratch-what-i-learned-reproducing-a-2015-paper-on-a-4gb-gpu-6618b0c2125a)
