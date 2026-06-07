@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pth
+*.pt
+.cache/
+results/
+images/content/
+images/style/
+*.jpg
+*.png
+*.jpeg
+gradio_cached_examples/
