@@ -37,36 +37,33 @@ Style weight sweep with fixed `content_weight=1e4`, 200 optimisation steps:
 
 **Key finding:** SSIM drops sharply from 0.92 → 0.77 between style weights 1e7 and 1e8, identifying **1e8 as the optimal style weight** — the point where style begins to dominate content structure.
 
----
-
 ## 🏗️ Project Structure
-neural-style-transfer-moodboard/
-├── app.py                         # Gradio UI (6 tabs)
-├── main.py                        # CLI entry point
-├── src/
-│   ├── utils.py                   # Image loading, saving, display
-│   ├── model.py                   # VGG19 features, Gram matrix, losses
-│   ├── style_transfer.py          # Core style transfer loop
-│   ├── moodboard.py               # Multi-image style blending (CPU)
-│   ├── clip_conditioning.py       # CLIP text-conditioned style transfer
-│   ├── ablation.py                # Ablation study over style weights
-│   ├── palette.py                 # K-means colour palette extraction
-│   └── evaluation.py              # SSIM + FID evaluation metrics
-├── images/
-│   ├── content/                   # Content images
-│   └── style/                     # Style images
-└── results/
-├── output.png                 # Style transfer result
-├── moodboard_output.png       # Moodboard result
-├── clip_output.png            # CLIP-conditioned result
-├── comparison.png             # Side by side comparison
-├── palette_comparison.png     # Colour palette comparison
-└── ablation/                  # Ablation study outputs
-├── style_weight_comparison.png
-├── loss_curves.png
-└── evaluation_charts.png
 
----
+    neural-style-transfer-moodboard/
+    ├── app.py                         # Gradio UI (6 tabs)
+    ├── main.py                        # CLI entry point
+    ├── src/
+    │   ├── utils.py                   # Image loading, saving, display
+    │   ├── model.py                   # VGG19 features, Gram matrix, losses
+    │   ├── style_transfer.py          # Core style transfer loop
+    │   ├── moodboard.py               # Multi-image style blending (CPU)
+    │   ├── clip_conditioning.py       # CLIP text-conditioned style transfer
+    │   ├── ablation.py                # Ablation study over style weights
+    │   ├── palette.py                 # K-means colour palette extraction
+    │   └── evaluation.py             # SSIM + FID evaluation metrics
+    ├── images/
+    │   ├── content/                   # Content images
+    │   └── style/                     # Style images
+    └── results/
+        ├── output.png                 # Style transfer result
+        ├── moodboard_output.png       # Moodboard result
+        ├── clip_output.png            # CLIP-conditioned result
+        ├── comparison.png             # Side by side comparison
+        ├── palette_comparison.png     # Colour palette comparison
+        └── ablation/
+            ├── style_weight_comparison.png
+            ├── loss_curves.png
+            └── evaluation_charts.png
 
 ## ⚙️ Setup
 
